@@ -1,14 +1,13 @@
 
 
 # Gemini CLI
-
-[![Gemini CLI 
+Gemini CLI 
 
 Gemini CLI is an open-source AI agent that brings the power of Gemini directly
 into your terminal. It provides lightweight access to Gemini, giving you the
 most direct path from your prompt to our model.
 
-Learn all about Gemini CLI in our [documentation](https://geminicli.com/docs/).
+Learn all about Gemini CLI in our
 
 ## 🚀 Why Gemini CLI?
 
@@ -35,13 +34,12 @@ Learn all about Gemini CLI in our [documentation](https://geminicli.com/docs/).
 
 ```bash
 # Using npx (no installation required)
-npx https://github.com/google-gemini/gemini-cli
-```
+npx 
 
 #### Install globally with npm
 
 ```bash
-npm install -g @google/gemini-cli
+npm install 
 ```
 
 #### Install globally with Homebrew (macOS/Linux)
@@ -52,7 +50,7 @@ brew install gemini-cli
 
 ## Release Cadence and Tags
 
-See [Releases](./docs/releases.md) for more details.
+See for more details.
 
 ### Preview
 
@@ -61,7 +59,7 @@ releases will not have been fully vetted and may contain regressions or other
 outstanding issues. Please help us test and install with `preview` tag.
 
 ```bash
-npm install -g @google/gemini-cli@preview
+npm install 
 ```
 
 ### Stable
@@ -71,8 +69,8 @@ npm install -g @google/gemini-cli@preview
   and validations. Use `latest` tag.
 
 ```bash
-npm install -g @google/gemini-cli@latest
-```
+npm install 
+
 
 ### Nightly
 
@@ -81,7 +79,7 @@ npm install -g @google/gemini-cli@latest
   be assumed there are pending validations and issues. Use `nightly` tag.
 
 ```bash
-npm install -g @google/gemini-cli@nightly
+npm install 
 ```
 
 ## 📋 Key Features
@@ -97,13 +95,13 @@ npm install -g @google/gemini-cli@nightly
 - Automate operational tasks like querying pull requests or handling complex
   rebases
 - Use MCP servers to connect new capabilities, including
-  [media generation with Imagen, Veo or Lyria](https://github.com/GoogleCloudPlatform/vertex-ai-creative-studio/tree/main/experiments/mcp-genmedia)
+  [media generation with Imagen, Veo or Lyria]
 - Run non-interactively in scripts for workflow automation
 
 ### Advanced Capabilities
 
 - Ground your queries with built-in
-  [Google Search](https://ai.google.dev/gemini-api/docs/grounding) for real-time
+  for real-time
   information
 - Conversation checkpointing to save and resume complex sessions
 - Custom context files (GEMINI.md) to tailor behavior for your projects
@@ -111,8 +109,8 @@ npm install -g @google/gemini-cli@nightly
 ### GitHub Integration
 
 Integrate Gemini CLI directly into your GitHub workflows with
-[**Gemini CLI GitHub Action**](https://github.com/google-github-actions/run-gemini-cli):
-
+[**Gemini CLI GitHub Action**]
+ 
 - **Pull Request Reviews**: Automated code review with contextual feedback and
   suggestions
 - **Issue Triage**: Automated labeling and prioritization of GitHub issues based
@@ -130,7 +128,7 @@ Choose the authentication method that best fits your needs:
 
 **✨ Best for:** Individual developers as well as anyone who has a Gemini Code
 Assist License. (see
-[quota limits and terms of service](https://cloud.google.com/gemini/docs/quotas)
+[quota limits and terms of 
 for details)
 
 **Benefits:**
@@ -150,7 +148,7 @@ gemini
 
 ```bash
 # Set your Google Cloud Project
-export GOOGLE_CLOUD_PROJECT="YOUR_PROJECT_ID"
+export GOOGLE_CLOUD_PROJECT=""
 gemini
 ```
 
@@ -165,8 +163,8 @@ gemini
 - **Usage-based billing**: Upgrade for higher limits when needed
 
 ```bash
-# Get your key from https://aistudio.google.com/apikey
-export GEMINI_API_KEY="YOUR_API_KEY"
+# Get your key from h
+export "
 gemini
 ```
 
@@ -182,13 +180,13 @@ gemini
 
 ```bash
 # Get your key from Google Cloud Console
-export GOOGLE_API_KEY="YOUR_API_KEY"
-export GOOGLE_GENAI_USE_VERTEXAI=true
+export"
+export 
 gemini
 ```
 
 For Google Workspace accounts and other authentication methods, see the
-[authentication guide](./docs/get-started/authentication.md).
+[authentication guide].
 
 ## 🚀 Getting Started
 
@@ -247,7 +245,6 @@ gemini
 #### Analyze existing code
 
 ```bash
-git clone https://github.com/google-gemini/gemini-cli
 cd gemini-cli
 gemini
 > Give me a summary of all of the changes that went in yesterday
@@ -255,76 +252,8 @@ gemini
 
 ## 📚 Documentation
 
-### Getting Started
 
-- [**Quickstart Guide**](./docs/get-started/index.md) - Get up and running
-  quickly.
-- [**Authentication Setup**](./docs/get-started/authentication.md) - Detailed
-  auth configuration.
-- [**Configuration Guide**](./docs/get-started/configuration.md) - Settings and
-  customization.
-- [**Keyboard Shortcuts**](./docs/cli/keyboard-shortcuts.md) - Productivity
-  tips.
-
-### Core Features
-
-- [**Commands Reference**](./docs/cli/commands.md) - All slash commands
-  (`/help`, `/chat`, etc).
-- [**Custom Commands**](./docs/cli/custom-commands.md) - Create your own
-  reusable commands.
-- [**Context Files (GEMINI.md)**](./docs/cli/gemini-md.md) - Provide persistent
-  context to Gemini CLI.
-- [**Checkpointing**](./docs/cli/checkpointing.md) - Save and resume
-  conversations.
-- [**Token Caching**](./docs/cli/token-caching.md) - Optimize token usage.
-
-### Tools & Extensions
-
-- [**Built-in Tools Overview**](./docs/tools/index.md)
-  - [File System Operations](./docs/tools/file-system.md)
-  - [Shell Commands](./docs/tools/shell.md)
-  - [Web Fetch & Search](./docs/tools/web-fetch.md)
-- [**MCP Server Integration**](./docs/tools/mcp-server.md) - Extend with custom
-  tools.
-- [**Custom Extensions**](./docs/extensions/index.md) - Build and share your own
-  commands.
-
-### Advanced Topics
-
-- [**Headless Mode (Scripting)**](./docs/cli/headless.md) - Use Gemini CLI in
-  automated workflows.
-- [**Architecture Overview**](./docs/architecture.md) - How Gemini CLI works.
-- [**IDE Integration**](./docs/ide-integration/index.md) - VS Code companion.
-- [**Sandboxing & Security**](./docs/cli/sandbox.md) - Safe execution
-  environments.
-- [**Trusted Folders**](./docs/cli/trusted-folders.md) - Control execution
-  policies by folder.
-- [**Enterprise Guide**](./docs/cli/enterprise.md) - Deploy and manage in a
-  corporate environment.
-- [**Telemetry & Monitoring**](./docs/cli/telemetry.md) - Usage tracking.
-- [**Tools API Development**](./docs/core/tools-api.md) - Create custom tools.
-- [**Local development**](./docs/local-development.md) - Local development
-  tooling.
-
-### Troubleshooting & Support
-
-- [**Troubleshooting Guide**](./docs/troubleshooting.md) - Common issues and
-  solutions.
-- [**FAQ**](./docs/faq.md) - Frequently asked questions.
-- Use `/bug` command to report issues directly from the CLI.
-
-### Using MCP Servers
-
-Configure MCP servers in `~/.gemini/settings.json` to extend Gemini CLI with
-custom tools:
-
-```text
-> @github List my open pull requests
-> @slack Send a summary of today's commits to #dev channel
-> @database Run a query to find inactive users
-```
-
-See the [MCP Server Integration guide](./docs/tools/mcp-server.md) for setup
+See the for setup
 instructions.
 
 ## 🤝 Contributing
@@ -337,35 +266,22 @@ encourage the community to:
 - Submit code improvements.
 - Share your MCP servers and extensions.
 
-See our [Contributing Guide](./CONTRIBUTING.md) for development setup, coding
+See our for development setup, coding
 standards, and how to submit pull requests.
 
-Check our [Official Roadmap](https://github.com/orgs/google-gemini/projects/11)
+Check our
 for planned features and priorities.
 
 ## 📖 Resources
 
-- **[Official Roadmap](./ROADMAP.md)** - See what's coming next.
-- **[Changelog](./docs/changelogs/index.md)** - See recent notable updates.
-- **[NPM Package](https://www.npmjs.com/package/@google/gemini-cli)** - Package
-  registry.
-- **[GitHub Issues](https://github.com/google-gemini/gemini-cli/issues)** -
-  Report bugs or request features.
-- **[Security Advisories](https://github.com/google-gemini/gemini-cli/security/advisories)** -
   Security updates.
 
 ### Uninstall
 
-See the [Uninstall Guide](docs/cli/uninstall.md) for removal instructions.
+See the or removal instructions.
 
 ## 📄 Legal
 
-- **License**: [Apache License 2.0](LICENSE)
-- **Terms of Service**: [Terms & Privacy](./docs/tos-privacy.md)
-- **Security**: [Security Policy](SECURITY.md)
-
----
-
-<p align="center">
-  Built with ❤️ by Google and the open source community
-</p>
+<>
+  Built with  by Google and the open source community
+<>
